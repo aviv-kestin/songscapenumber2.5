@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+ }
+
+.start {
+display: flex;
+background-color:#68d1f1;
+height: 70vh;
+}
+
+
+
+ .set {
+display: flex;
+flex-direction:column-reverse;
+background-color: rgb(71, 152, 73);
+height: 30vh;
+
+}
+
+
+
+
+  #image {
+    display: flex;
+    position: absolute;
+    height: 24vh;
+    width: auto;
+    right: 180px;
+    top: 80px;
+    animation: rotation 2s linear 0s infinite;
+    animation-play-state: paused;
+    z-index: 2;
+  }
+  
+  @keyframes rotation {
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+  #lebouton {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    height: 4vh;
+    width: auto;
+  }
+  
+  
+
+#mine {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+#yours {
+    position: absolute;
+    top: 270px;
+    left: 500px;
+}
+
+#his {
+
+  position: absolute;
+  scale: 120%;
+  top: 383px;
+  right: 410px;
+
+}
+
+#sware {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  scale: 120%;
+}
+
+#dare {
+  position: absolute;
+  top: 150px;
+  left: 680px;
+  scale: 120%;
+}
+
+.classname {
+  animation-duration: .75s;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  position: absolute;
+  top: 0px;
+}
+
+@keyframes moving {
+  from {
+      left: 0%;
+  }
+  to {
+      left: 1.5%;
+  }
+ 
+}
+
+#hellye {
+  position: absolute;
+  top: 280px;
+  right: 140px;
+  scale: 70%;
+}
+
+#man {
+  position: absolute;
+  top: 492px;
+  right: 190px;
+  scale: 28%;
+  transform: scaleX(-1);
+}
